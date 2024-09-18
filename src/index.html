@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EShopper - Bootstrap Shop Template</title>
+    <!-- OUTPUT CSS LINK -->
+    <link rel="stylesheet" href="output.css">
+    <!-- ICONIC ICONS LINK -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- GOOGLE FONTS LINKS ROBOTO FLEX -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <!-- GOOGLE POPPINS LINK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,
+    400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="font-poppins">
+    <!-- HEADER -->
+    <header>
+        <!-- MEDIA LINKS -->
+        <div class="bg-blue-50 py-1 items-center justify-between  md:flex md:px-10 lg:px-16">
+            <div class="hidden space-x-3  md:flex ">
+                <a href="./index.html" class="text-lg hover:underline">FAQs </a> <span>|</span>
+                <a href="./index.html" class="text-lg hover:underline">Help </a><span>|</span>
+                <a href="./index.html" class="text-lg hover:underline">Support</a>
+            </div>
+            <div class="flex items-center justify-center gap-5 py-2">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+            </div>
+        </div>
+        
+        <!-- NAVIGATION SEARCH -->
+        <nav>
+            <div class="flex-row-reverse items-center justify-between lg:flex lg:mx-16">
+                <form class="my-3 flex items-center justify-between lg:justify-start px-3 lg:px-0">
+                    <!-- SEARCH INPUT -->
+                    <div class="flex items-center lg:hidden">
+                        <input type="search" name="search" placeholder="Search for products"
+                         class="bg-transparent py-2 w-36 pl-2 sm:w-52 md:w-80 border border-slate-50 
+                         outline-none placeholder:text-lg placeholder:text-slate-600"
+                        />
+                        <button class="border border-slate-50 py-2 px-3 cursor-auto">
+                            <ion-icon name="search" class="text-[#d39995]
+                            text-xl"></ion-icon>
+                        </button>
+                    </div>
+    
+                    <div class="flex items-center gap-2">
+                        <button class="border border-slate-50 py-2 px-3 cursor-pointer
+                        flex items-center gap-1">
+                            <ion-icon name="heart" class="text-[#d39995]
+                            text-xl"></ion-icon>
+                            <span class="text-sm text-slate-600">
+                                0
+                            </span>
+                        </button>
+    
+                        <button class="border border-slate-50 py-2 px-3 cursor-pointer
+                        flex items-center gap-1">
+                            <ion-icon name="cart" class="text-[#d39995]
+                            text-xl"></ion-icon>
+                            <span class="text-sm text-slate-600">
+                                0
+                            </span>
+                        </button>
+                    </div>
+                </form>
+    
+                <!-- NAVIGATION MENU -->
+                <div class="border-t flex items-center justify-between px-3 py-3 lg:border-none lg:px-0">
+                    <div class="flex items-center gap-20">
+                        <!-- LOGO -->
+                        <div>
+                            <button class="text-2xl sm:text-4xl font-bold text-[#d39995]
+                            border px-5 py-2">
+                                <a href="index.html">E</a>
+                            </button>
+                            <span class="text-3xl font-semibold">
+                                <a href="index.html">Shopping</a>
+                            </span>
+        
+                        </div>
+                       
+                        <!-- SEARCH MENU -->
+                        <div class="hidden lg:flex items-center">
+                            <input type="search" name="search" id="search" placeholder="Search for products"
+                             class="bg-transparent py-2 w-36 pl-2 sm:w-52 md:w-80 lg:w-96 border border-slate-50 
+                             outline-none placeholder:text-lg placeholder:text-slate-600"
+                            />
+                            <label for="search" class="border border-slate-50 py-2 px-3 cursor-auto">
+                                <ion-icon name="search" class="text-[#d39995]
+                                text-xl"></ion-icon>
+                            </label>
+                        </div>
+                    </div>
+    
+                    
+                    <!-- ICON MENU -->
+                    <button class="mobile-menu-button lg:hidden border px-4 py
+                    hover:border-2 hover:border-black
+                    ">
+                        <ion-icon name="menu" class="text-6xl"></ion-icon>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="hidden mobile-menu lg:hidden">
+                <ul class="pl-4 flex flex-col gap-3 py-6 text-xl">
+                    <li class="text-black">
+                            <a href="index.html" class="
+                            text-[#d39995]">
+                              Home
+                            </a>
+                        </li>
+
+                        <li class="text-black">
+                            <a href="index.html" class="
+                            hover:text-[#d39995]">
+                              Shop
+                            </a>
+                        </li>
+
+                        <li class="text-black">
+                            <a href="index.html" class="
+                            hover:text-[#d39995]">
+                              Shop Details
+                            </a>
+                        </li>
+                        
+                        <li class="text-black">
+                            <a href="index.html" class="
+                            hover:text-[#d39995]">
+                              Pages
+                            </a>
+                        </li>
+
+                        <li class="text-black">
+                            <a href="index.html" class="
+                            hover:text-[#d39995]">
+                              Contact
+                            </a>
+                        </li>
+                </ul>
+            </div>
+
+            <!-- DESKTOP MENU -->
+            <div class="hidden px-16 items-start justify-between lg:flex">
+                <div class="flex items-start gap-10">
+                    <aside  class="bg-[#d19b98] relative w-72 pt-3
+                    cursor-pointer hover:bg-[#b4827f]
+                    ">
+                        <!-- input checkbox -->
+                        <input type="checkbox" id="competitors"
+                        class="absolute peer opacity-0"
+                        />
+                        <!-- heading -->
+                        <label for="competitors"
+                        class="tracking-wide mx-5 capitalize
+                        h-[50px] flex items-center text-base
+                        lg:text-lg
+                        cursor-pointer">
+                        categories
+                        </label>
+                        <!-- arrow -->
+                        <div class="absolute top-4 right-10 py-3
+                        rotate-0 peer-checked:rotate-180
+                        duration-700">
+                        <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+                        <!-- Content -->
+                        <div class="w-72 bg-white border-b
+                            flex flex-col divide-y max-h-0 overflow-hidden 
+                            peer-checked:max-h-full
+                            ">
+                            <a href="" class="py-2 pl-5 text-xl border
+                            hover:text-[#d39995]">
+                                Dresses
+                            </a>
+                            <a href="" class="py-2 pl-5 text-xl border
+                            hover:text-[#d39995]">
+                                Shirts
+                            </a>
+                            <a href="" class="py-2 pl-5 text-xl border
+                            hover:text-[#d39995]">
+                                Jeans
+                            </a>
+                            <a href="" class="py-2 pl-5 text-xl border
+                            hover:text-[#d39995]">
+                                Sweamwear
+                            </a>
+                            <a href="" class="py-2 pl-5 text-xl border
+                            hover:text-[#d39995]">
+                                Sportwears
+                            </a>
+                            <a href="" class="py-2 pl-5 text-xl border
+                            hover:text-[#d39995]">
+                                Jumpsuits
+                            </a>
+                            <a href="" class="py-2 pl-5 text-xl border
+                            hover:text-[#d39995]">
+                                Blazers
+                            </a>
+                            <a href="" class="py-2 pl-5 text-xl border
+                            hover:text-[#d39995]">
+                                Jackets
+                            </a>
+                            <a href="" class="py-2 pl-5 text-xl border
+                            hover:text-[#d39995]">
+                                Shoes
+                            </a>
+                        </div>
+                        <div class="bg-white w-72 py-2"></div>
+                    </aside>
+
+                    <!-- DESKTOP MENU'S -->
+                    <ul class="flex items-center py-6 text-lg gap-5">
+                        <li class="text-black">
+                            <a href="index.html" class="
+                            text-[#d39995]">
+                              Home
+                            </a>
+                        </li>
+
+                        <li class="text-black">
+                            <a href="index.html" class="
+                            hover:text-[#d39995]">
+                              Shop
+                            </a>
+                        </li>
+
+                        <li class="text-black">
+                            <a href="index.html" class="
+                            hover:text-[#d39995]">
+                              Shop Details
+                            </a>
+                        </li>
+
+                        <li class="text-black">
+                            <a href="index.html" class="
+                            hover:text-[#d39995]">
+                              Pages
+                            </a>
+                        </li>
+
+                        <li class="text-black">
+                            <a href="index.html" class="
+                            hover:text-[#d39995]">
+                              Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- LOGIN / REGISTER -->
+                <div class="flex gap-4 py-6">
+                    <button class="text-lg hover:text-[#d39995]">
+                        <a href="index.html">
+                            Login
+                        </a>
+                    </button>
+
+                    <button class="text-lg hover:text-[#d39995]">
+                        <a href="index.html">
+                            Register
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- SLIDER CAROUSEL HERO SECTION FOR THE HEADER -->
+        <section class="relative overflow-hidden w-11/12
+        md:w-3/4 mx-auto
+        ">
+            <!-- CAROUSEL WRAPPER CONTAINER -->
+            <div class="flex transition-transform 
+            duration-1000 ease-in-out
+            ">
+                <!-- SLIDE ONE IMAGE HERE -->
+                <div class="min-w-full py-40 bg-hero-banner-one 
+                bg-cover bg-center brightness-90
+                ">
+                    <div class="flex flex-col items-center justify-center gap-3 md:gap-5">
+                        <p class="text-2xl text-white font-semibold
+                        tracking-wider sm:text-3xl">
+                            10% Off Your First Order
+                        </p>
+                        <p class="text-3xl text-white font-semibold tracking-wide
+                        sm:tracking-widest md:text-5xl lg:text-6xl">
+                            Fashionable Dress
+                        </p>
+                        <button type="button" class="text-lg
+                        bg-white px-5 py-2 hover:bg-white/50 hover:duration-1000">
+                            Shop Now
+                        </button>
+                    </div>
+                </div>
+                <!-- SLIDE TWO IMAGE HERE -->
+                <div class="min-w-full py-40 bg-hero-banner-two 
+                bg-cover bg-center brightness-90
+                ">
+                    <div class="flex flex-col items-center justify-center gap-3 md:gap-5">
+                        <p class="text-2xl text-white font-semibold
+                        tracking-wider sm:text-3xl">
+                            10% Off Your First Order
+                        </p>
+                        <p class="text-3xl text-white font-semibold tracking-wide
+                        sm:tracking-widest md:text-5xl lg:text-6xl">
+                            Reasonable Price
+                        </p>
+                        <button type="button" class="text-lg
+                        bg-white px-5 py-2 hover:bg-white/50 hover:duration-1000">
+                            Shop Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- CAROUSEL CONTROLS BUTTON  -->
+            <button class="absolute top-1/2 left-0 md:left-5 transform -translate-y-1/2 
+            bg-black/30 text-white p-1 hover:brightness-95 hover:bg-black/70
+            sm:brightness-75 
+            md:rounded-md " id="prev">
+                <ion-icon name="chevron-back" class="sm:text-3xl md:text-5xl"></ion-icon>
+            </button>
+            <button class="absolute top-1/2 right-0 md:right-5 transform -translate-y-1/2 
+            bg-black/30 text-white p-1 hover:brightness-95 hover:bg-black/70
+            sm:brightness-75 
+            md:rounded-md " id="next">
+                <ion-icon name="chevron-forward" class="sm:text-3xl md:text-5xl"></ion-icon>
+            </button>
+        </section>   
+    </header>
+
+    <!-- SECTION ONE BUSINESS SUPPORT -->
+    <section>
+        <!-- BUSINESS QUALITY -->
+        <div class="w-full py-10 gap-5 px-4 grid grid-cols-1
+        sm:grid-cols-2 xl:grid-cols-4 md:px-10 xl:px-16">
+            <!-- QUALITY PRODUCT -->
+            <div class="w-full px-4 py-6 flex items-center justify-start
+             gap-5 border
+             ">
+                <img src="./images/icon-mark.png" alt="Check Mark image"
+                class="xl:w-7"/>
+                <p class="font-medium">
+                    Quality Product
+                </p>
+            </div>
+
+            <!-- FREE SHIPPING -->
+            <div class="w-full px-4 py-6 flex items-center justify-start
+             gap-5 border 
+             ">
+                <img src="./images/icon-transmit.png" alt="Free Shipping Truck image"
+                class="xl:w-7"/>
+                <p class="font-medium">
+                    Free Shipping
+                </p>
+            </div>
+
+            <!-- Return -->
+            <div class="w-full px-4 py-6 flex items-center justify-start
+            gap-5 border
+            ">
+                <img src="./images/icon-exchange.png" alt="Check Mark image"/>
+                <p class="text-base font-medium">
+                    14-Day Return
+                </p>
+            </div>
+
+            <!-- Contact -->
+            <div class="w-full px-4 py-3 flex items-center justify-start
+            gap-5 border
+            ">
+                <img src="./images/icon-call.png" alt="Check Mark image"/>
+                <p class="text-base font-medium">
+                    24/7 Support
+                </p>
+            </div>
+        </div>
+
+        <!-- MAIN PRODUCTS -->
+        <main class="px-4 grid grid-cols-1 gap-6 font-roboto 
+        sm:grid-cols-2 
+        md:px-10 xl:px-16 lg:grid-cols-3
+        ">
+            <!-- MEN WEAR CART -->
+            <div class="border py-2 px-6">
+                <p class="flex items-center justify-end px-5
+                text-lg text-slate-900">
+                    15 Products
+                </p>
+                <div class="overflow-hidden py-10 w-full 
+                p-3
+                ">
+                 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/cat-1.jpeg"
+                        alt="" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                 
+                </div>
+
+                <p class="flex items-center justify-start px-5
+                text-xl text-black/80 font-semibold">
+                    Men's dresses
+                </p>
+            </div>
+
+            <!-- WOMEN WEAR CART -->
+            <div class="border py-2 px-6">
+                <p class="flex items-center justify-end px-5
+                text-lg text-slate-900">
+                    15 Products
+                </p>
+                <div class="overflow-hidden py-10 w-full 
+                p-3
+                ">
+                 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/cat-2.jpeg"
+                        alt="Product Women" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                 
+                </div>
+
+                <p class="flex items-center justify-start px-5
+                text-xl text-black/80 font-semibold">
+                    Women's dresses
+                </p>
+            </div>
+
+            <!-- INFANT WEAR CART -->
+            <div class="border py-2 px-6">
+                <p class="flex items-center justify-end px-5
+                text-lg text-slate-900">
+                    15 Products
+                </p>
+                <div class="overflow-hidden py-10 w-full 
+                p-3
+                ">
+                 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/cat-3.jpeg"
+                        alt="Baby Wears" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                 
+                </div>
+
+                <p class="flex items-center justify-start px-5
+                text-xl text-black/80 font-semibold">
+                    Baby's dresses
+                </p>
+            </div>
+
+            <!-- ACCESSORIES CART -->
+            <div class="border py-2 px-6">
+                <p class="flex items-center justify-end px-5
+                text-lg text-slate-900">
+                    15 Products
+                </p>
+                <div class="overflow-hidden py-10 w-full 
+                p-3
+                ">
+                 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/cat-4.jpeg"
+                        alt="Accessories" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                 
+                </div>
+
+                <p class="flex items-center justify-start px-5
+                text-xl text-black/80 font-semibold">
+                    Accessories
+                </p>
+            </div>
+
+            <!-- BAGS CART -->
+            <div class="border py-2 px-6">
+                <p class="flex items-center justify-end px-5
+                text-lg text-slate-900">
+                    15 Products
+                </p>
+                <div class="overflow-hidden py-10 w-full 
+                p-3
+                ">
+                 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/cat-5.jpeg"
+                        alt="Bags" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                 
+                </div>
+
+                <p class="flex items-center justify-start px-5
+                text-xl text-black/80 font-semibold">
+                    Bags
+                </p>
+            </div>
+
+            <!-- SHOES CART -->
+            <div class="border py-2 px-6">
+                <p class="flex items-center justify-end px-5
+                text-lg text-slate-900">
+                    15 Products
+                </p>
+                <div class="overflow-hidden py-10 w-full 
+                p-3
+                ">
+                 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/cat-6.jpeg"
+                        alt="Shoes" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                 
+                </div>
+
+                <p class="flex items-center justify-start px-5
+                text-xl text-black/80 font-semibold">
+                    Shoes
+                </p>
+            </div>
+        </main>
+
+        <!-- SHOP NOW  -->
+        <div class="pt-10 px-4 grid grid-cols-1 gap-5 
+        md:grid-cols-2 md:px-10 md:pt-20 lg:px-16">
+            <div class="bg-[#edf0ff] pt-10 w-full flex justify-between px-5">
+                <img src="./images/offer-1.png" alt="Offer One Image"
+                class="w-36"/>
+                <div class="space-y-6">
+                    <p class="text-2xl text-[#d39995]">
+                        20% off the all order
+                    </p>
+                    <p class="text-2xl sm:text-4xl font-bold">
+                        Spring Collection
+                    </p>
+                    <button class="text-[#d39995] md:ml-44 px-6 py-2 border
+                    border-[#d39995] hover:bg-[#d39995] hover:text-black
+                    hover:duration-700">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-[#edf0ff] pt-10 w-full flex flex-row-reverse justify-between px-5">
+                <img src="./images/offer-2.png" alt="Offer One Image"
+                class="w-36"/>
+                <div class="space-y-6">
+                    <p class="text-2xl text-[#d39995]">
+                        20% off the all order
+                    </p>
+                    <p class="text-2xl sm:text-4xl font-bold">
+                        Spring Collection
+                    </p>
+                    <button class="text-[#d39995] px-6 py-2 border
+                    border-[#d39995] hover:bg-[#d39995] hover:text-black
+                    hover:duration-700">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STYLISH SECTION TWO -->
+    <section class="pt-10 md:pt-20">
+        <div class="flex items-center justify-center gap-3">
+            <hr class="hidden sm:block w-20 border-2 border-black">
+            <p class="text-3xl font-semibold">
+                Trandy Products
+            </p>
+            <hr class="hidden sm:block w-20 border-2 border-black">
+        </div>
+
+        <!-- STYLISH GRID SECTION GOODS ONE -->
+        <div class="px-4 py-10 grid grid-cols-1 gap-6 sm:grid-cols-2 
+        md:px-10 lg:px-16 lg:grid-cols-4">
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-1.jpeg"
+                        alt="Shoes" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-2.jpeg"
+                        alt="Product Small Boy Image" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-3.jpeg"
+                        alt="A Young Man Stylish Image" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-4.jpeg"
+                        alt="A Young Female Stylish Image" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-5.jpeg"
+                        alt="Young Girl Stylish Image" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-6.jpeg"
+                        alt="An Attractive Young Man Wearing Suit" 
+                        class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-7.jpeg"
+                        alt="A Beautiful Woman Wearing Stylish Gown" 
+                        class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-8.jpeg"
+                        alt="A Handsome Kid Wearing Jeans & Top" 
+                        class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UPDATED SECTION THREE FOR ANY PRODUCTS -->
+    <section class="pt-10 md:pt-20">
+        <div class="bg-slate-50 w-full py-24">
+            <div class="flex items-center justify-center gap-3">
+                <hr class="hidden sm:block w-20 border-2 border-black">
+                <p class="text-3xl font-semibold">
+                    Stay Updated
+                </p>
+                <hr class="hidden sm:block w-20 border-2 border-black">
+            </div>
+
+            <p class="pt-3 text-slate-500 text-center mx-auto max-w-96 
+            md:max-w-xl">
+                Amet lorem at rebum amet dolores. Elitr lorem dolor sed amet diam 
+                labore at justo ipsum eirmod duo labore labore.
+            </p>
+
+            <!-- SUBCRIPTION FORM -->
+            <form class="flex items-center justify-center pt-5">
+                <input type="email" name="email" id="email"
+                placeholder="Email goes here" class="bg-white capitalize
+                pl-2 py-3 w-1/2 font-light outline-none border-none
+                placeholder:text-xl 
+                lg:w-2/5
+                "/>
+                <label for="email" class="py-[10px] px-6 bg-[#d39995] text-lg
+                hover:text-white hover:bg-[#ee9690]">
+                    Subcribe
+                </label>
+            </form>
+        </div>
+
+        <!-- JUST ARRIVED -->
+        <div class="pt-10 flex items-center justify-center gap-3">
+            <hr class="hidden sm:block w-20 border-2 border-black">
+            <p class="text-3xl font-semibold">
+                Trandy Products
+            </p>
+            <hr class="hidden sm:block w-20 border-2 border-black">
+        </div>
+    
+        <!-- STYLISH GRID SECTION GOODS TWO -->
+        <div class="px-4 py-10 grid grid-cols-1 gap-6 sm:grid-cols-2 
+        md:px-10 lg:px-16 lg:grid-cols-4">
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-1.jpeg"
+                        alt="Shoes" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+    
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+    
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-2.jpeg"
+                        alt="Product Small Boy Image" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+    
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+    
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-3.jpeg"
+                        alt="A Young Man Stylish Image" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+    
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+    
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-4.jpeg"
+                        alt="A Young Female Stylish Image" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+    
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+    
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-5.jpeg"
+                        alt="Young Girl Stylish Image" class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+    
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+    
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-6.jpeg"
+                        alt="An Attractive Young Man Wearing Suit" 
+                        class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+    
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+    
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-7.jpeg"
+                        alt="A Beautiful Woman Wearing Stylish Gown" 
+                        class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+    
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+    
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="inline-block border py-2 px-">
+                <div class="overflow-hidden w-full 
+                "> 
+                    <div class="max-w-xs overflow-hidden ">
+                        <a href="">
+                        <img 
+                        src="./images/product-8.jpeg"
+                        alt="A Handsome Kid Wearing Jeans & Top" 
+                        class="cursor-pointer object-cover
+                        transition duration-[2s] hover:scale-125
+                        w-full
+                        "/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center py-2 border-t">
+                    <p class="text-lg font-medium">
+                        Colorful Stylish Shirt
+                    </p>
+                    <p class="space-x-2">
+                        $123.00
+                        <span class="line-through font-medium">$123.00</span>
+                    </p>
+                </div>
+    
+                <div class="flex items-center justify-between px-2 border-t pt-2">
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="eye" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">View Detail</span>
+                    </a>
+    
+                    <a href="index.html" class="flex items-center 
+                    gap-2 text-sm font-normal">
+                        <ion-icon name="cart" class="text-xl text-[#d39995]"></ion-icon>
+                        <span class="hover:text-[#d39995]">Add To Cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
+
+    <!-- JEVASCRIPT FILE LINK -->
+    <script src="./JAVASCRIPT/script.js"></script> 
+</body>
+</html>
